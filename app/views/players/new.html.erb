@@ -1,0 +1,13 @@
+<div class = "row" style="padding:10px">
+
+	<div class="col-xs-4">
+
+		<%= bootstrap_form_for [@team, @player] do |p| %>
+		<h2 style="color:white"> Player</h2><%= p.text_field(:name, placeholder: "Player Name") %>
+		<h2 style="color:white"> #</h2><%= p.text_field(:jersey, placeholder: "Jersey") %>
+
+		<%= p.submit "Submit New Player", class: "btn btn-primary" %>
+		<% end %>
+
+	</div>
+</div>

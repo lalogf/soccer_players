@@ -1,0 +1,104 @@
+
+
+<%= bootstrap_form_for @team, method: 'delete' do  %>
+
+<div class="row margin-top-20" style="color: white" >
+
+	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 formation" style="position: relative" >
+
+		<h4 style="text-align: center"><a  href="/teams/<%= @team.id%>"style="color:inherit; text-decoration-none">
+			<%= @team.name%></a> (<%=@team.country%>)</h4>
+			<p style="text-align:center"><a href="/teams/<%=@team.id%>/edit" style="padding:5px" class="btn btn-warning" role="button">Edit team</a>   <a href="/teams/<%=@team.id%>/players/new" style="padding:5px"  class="btn btn-primary" role="button">Add Player</a></p>
+			<%= submit_tag "Delete Team", class: "btn btn-danger" %>
+
+			<div class="thumbnail soccer" style="height:600px">
+
+
+
+				<% @team.players.order(jersey: :asc).each do |player|%> 
+
+
+
+
+				<% if player.jersey == 1%>
+				<p class="keeper">
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit" ><%=player.name%><br><%= player.jersey %></a>
+				</p> 
+				<% end %>
+
+
+				<!-- defense -->
+				<% if player.jersey == 7%>
+				<p class="leftfullback"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%> 
+
+				<% if player.jersey == 2%>
+				<p class="centerback1"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%> <br> <%= player.jersey %></a>
+				</p>
+				<%end%>
+
+				<% if player.jersey == 3%>
+				<p class="centerback2"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%>
+
+
+				<% if player.jersey == 4%>
+				<p class="rightfullback"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%>
+
+				<!-- mid-field -->
+				<% if player.jersey == 8%>
+				<p class="leftmid"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%>
+
+				<% if player.jersey == 5%>
+				<p class="defensivemid1"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%>
+
+				<% if player.jersey == 6%>
+				<p class="defensivemid2"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%>
+
+				<% if player.jersey == 10%>
+				<p class="centermid"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%>
+
+
+				<!-- fowards -->
+				<% if player.jersey == 9%>
+				<p class="striker"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%>
+				<% if player.jersey == 11%>
+				<p class="secondstriker"> 
+					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
+				</p>
+				<%end%>
+				<%end%>
+			</div>
+		</div>
+
+
+
+
+
+			<%end%>
+
+		</div>
+	</div>

@@ -1,0 +1,14 @@
+<!-- <div class="container" > -->
+
+<div class = "row" style="padding:10px">
+
+	<div class="col-xs-4">
+
+		<%= bootstrap_form_for @team do |f| %>
+		<%= f.text_field(:name, placeholder: "Team Name") %>
+		<%= f.text_field(:country, placeholder: "Country") %>
+		<%= f.submit  "Submit New Team", class: "btn btn-success" %>
+		<% end %>
+	</div>
+</div>
+<!-- </div> -->

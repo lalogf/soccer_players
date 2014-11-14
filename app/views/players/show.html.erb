@@ -1,0 +1,12 @@
+<div class="row" style="padding:10px">
+	<div class="col-xs-4">
+
+		<%= bootstrap_form_for @player, url: "/teams/#{params[:team_id]}/players/#{params[:id]}" , method: "delete" do  %>
+		<h1 style="color:white"><%=@player.name%></h1><br>
+		<h1 style="color:white"><%= @player.jersey %></h1><br>
+		<%= submit_tag "Delete Player", class: "btn btn-danger" %>
+
+
+		<% end %>
+	</div>
+</div>

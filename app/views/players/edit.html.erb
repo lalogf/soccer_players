@@ -1,0 +1,24 @@
+
+<div class="row" style="margin:10px">
+	<div class="col-xs-4">
+
+		<%= bootstrap_form_for [@team, @player], method: "put"  do |p| %>
+		<h2 style="color:white">Player</h2><%= p.text_field(:name, placeholder: "Player Name") %>
+		<h2 style="color:white">Jersey</h2><%= p.text_field(:jersey, placeholder: "Jersey") %>
+
+		<div class="row">
+			<div class="col-xs-3"><%= p.submit "Edit Player", class: "btn btn-primary" %></div>
+			<% end %>
+
+			<%= bootstrap_form_for [@team, @player], method: "delete" do %>
+			<div class="col-xs-3">
+
+				<%= submit_tag "Delete Player", class: "btn btn-danger" %>
+
+
+			</div>
+			<% end %>
+		</div>
+	</div>	
+</div>
+

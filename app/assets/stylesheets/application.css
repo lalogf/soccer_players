@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ *= require rails_bootstrap_forms
+
+
+
+
+ .soccer {
+ 	background-image: url("http://3.bp.blogspot.com/-CSSYymATk9Y/TgMwDsRUF7I/AAAAAAAAAGU/3WpYSNFx8Oc/s1600/Diagram+Of+Soccer+Field+2011.jpg");
+ 	background-size: cover;
+ 	background-position: center;
+
+ }
+
+ p a {
+ 	color:inherit; 
+ 	text-decoration:none
+ }
+
+ .formation{
+ 	 	text-align: center;
+ }
+
+ .keeper {
+ 	position:absolute; 
+ 	bottom:9%; 
+ 	left: 43%;
+ }
+ .leftfullback{
+ 	position:absolute; 
+ 	bottom:27%; 
+ 	left: 10%
+ }
+
+ .centerback1{
+ 	position:absolute; 
+ 	bottom:19%; 
+ 	left: 18%;
+
+ }
+
+ .centerback2{
+ 	position:absolute; 
+ 	bottom:19%; 
+ 	left: 62%
+ }
+
+ .rightfullback{
+ 	position:absolute; 
+ 	bottom:27%; 
+ 	left: 70%
+ }
+
+.defensivemid1{
+	position:absolute; 
+	bottom:33%; 
+	left: 44%
+}
+
+.defensivemid2{
+	position:absolute; 
+	bottom:45%; 
+	left: 74%
+}
+
+.leftmid {
+	position:absolute; 
+	bottom:45%; 
+	left: 10%
+}
+
+.centermid{
+	position:absolute; 
+	bottom:55%; 
+	left: 42%
+
+}
+
+.secondstriker{
+	position:absolute; 
+	top:30%; 
+	left: 63%
+
+}
+.striker{
+	position:absolute; 
+	top:22%; 
+	left: 28%
+}
+
+

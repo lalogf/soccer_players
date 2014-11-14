@@ -1,0 +1,21 @@
+
+	<div class="row" style="padding:20px">
+		<div class="col-xs-4" >
+
+			<%= bootstrap_form_for @team, method: "put" do |f| %>
+			<h2 style="color:white">Team</h2><%= f.text_field(:name) %>
+			<h2 style="color:white">Country</h2><%= f.text_field(:country) %>
+			
+			<div class="row">
+			
+			<div class="col-xs-3"> <%= submit_tag "Edit Team",class: "btn btn-info" %> </div>
+			<% end %>
+
+			<%= bootstrap_form_for @team, method: 'delete' do  %>
+			<div class="col-xs-3"><%= submit_tag "Delete Team", class: "btn btn-danger" %></div>
+			<% end %>
+			</div>
+
+
+		</div>
+	</div>
