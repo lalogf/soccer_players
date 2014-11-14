@@ -19,6 +19,7 @@
 
 				<% if player.jersey == 1%>
 				<p class="keeper">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit" ><%=player.name%><br><%= player.jersey %></a>
 				</p> 
 				<% end %>
@@ -27,18 +28,21 @@
 				<!-- defense -->
 				<% if player.jersey == 7%>
 				<p class="leftfullback"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%> 
 
 				<% if player.jersey == 2%>
 				<p class="centerback1"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%> <br> <%= player.jersey %></a>
 				</p>
 				<%end%>
 
 				<% if player.jersey == 3%>
 				<p class="centerback2"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%>
@@ -46,6 +50,7 @@
 
 				<% if player.jersey == 4%>
 				<p class="rightfullback"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%>
@@ -53,24 +58,28 @@
 				<!-- mid-field -->
 				<% if player.jersey == 8%>
 				<p class="leftmid"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%>
 
 				<% if player.jersey == 5%>
 				<p class="defensivemid1"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%>
 
 				<% if player.jersey == 6%>
 				<p class="defensivemid2"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%>
 
 				<% if player.jersey == 10%>
 				<p class="centermid"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%>
@@ -79,11 +88,13 @@
 				<!-- fowards -->
 				<% if player.jersey == 9%>
 				<p class="striker"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%>
 				<% if player.jersey == 11%>
 				<p class="secondstriker"> 
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span><br>
 					<a href="/teams/<%=player.team_id%>/players/<%=player.id%>/edit"><%= player.name%><br><%= player.jersey %></a>
 				</p>
 				<%end%>
